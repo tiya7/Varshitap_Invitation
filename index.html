@@ -385,6 +385,22 @@
   /* scroll reveal */
   .reveal { opacity:0; transform:translateY(18px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity:1; transform:none; }
+
+  .guru-img {
+  display: block;
+  margin: 0 auto 8px auto; /* Centers the image and adds space below it */
+  max-width: 60px;         /* Adjust this to make it smaller or larger */
+  height: auto;
+  border-radius: 50%;      /* Optional: makes the image circular if it's a portrait */
+}
+
+/* Ensures the column stacks items vertically */
+.guru-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 </style>
 </head>
 <body>
@@ -419,28 +435,32 @@
     <div class="glow-line"></div>
   </div>
   
- <!-- GURU -->
-  <div class="card sage reveal">
-    <div class="co tl"></div><div class="co tr"></div>
-    <div class="co bl"></div><div class="co br"></div>
-    <div class="section-title">गुरुवर्यों की निश्रा</div>
-    <div class="guru-columns">
-      <div class="guru-col">
-        <div class="guru-col-label">सतत दिव्य सान्निध्य<br>कलिकुंड तीर्थोद्धारक</div>
-        <div class="guru-name-main">प.पू.आ.वि. श्री राजेन्द्रसूरीश्वरजी महाराजा</div>
-      </div>
-      <div class="guru-col">
-        <div class="guru-col-label">सतत शुभ सान्निध्य</div>
-        <div class="guru-name-main">प.पू. आ.वि. श्री राजरत्नसूरीश्वरजी म. सा.<br>(भगवान महाराज)</div>
-        <div class="guru-name-sub">प.पू. पंन्यास श्री राजवल्लभविजयजी गणिवर्य</div>
-      </div>
-      <div class="guru-col">
-        <div class="guru-col-label">सतत शुभाशिष<br>सुलतान तीर्थोद्धारक-गच्छाधिपति</div>
-        <div class="guru-name-main">प.पू.आ.वि. श्री राजशेखर सूरीश्वरजी महाराजा</div>
-      </div>
+ <div class="card sage reveal">
+  <div class="co tl"></div><div class="co tr"></div>
+  <div class="co bl"></div><div class="co br"></div>
+  <div class="section-title">गुरुवर्यों की निश्रा</div>
+  <div class="guru-columns">
+    
+    <div class="guru-col">
+      <div class="guru-col-label">सतत दिव्य सान्निध्य<br>कलिकुंड तीर्थोद्धारक</div>
+      <div class="guru-name-main">प.पू.आ.वि. श्री राजेन्द्रसूरीश्वरजी महाराजा</div>
     </div>
+
+    <div class="guru-col">
+      <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2_-SQLKm_oYcLCIrhOY34lNKYs8PLmJcV8vBq3MR1Su4jT7VreGyZCHQMdQg-cbaekCXT4a9ggNrqizbNItB_aq9N2JWICGMwHlkxLCwY3We7zhseb9E2o2vC6S-39mkN1G7dGTwf83Tuth_tGczpUWfL5_i0v4M9PHl93oi3TMg0aiThtlUS4nlEFGA/w1200-h630-p-k-no-nu/Photoroom-20240619_085727.png" class="guru-img" alt="Guru Image">
+      
+      <div class="guru-col-label">सतत शुभ सान्निध्य</div>
+      <div class="guru-name-main">प.पू. आ.वि. श्री राजरत्नसूरीश्वरजी म. सा.<br>(भगवान महाराज)</div>
+      <div class="guru-name-sub">प.पू. पंन्यास श्री राजवल्लभविजयजी गणिवर्य</div>
+    </div>
+
+    <div class="guru-col">
+      <div class="guru-col-label">सतत शुभाशिष<br>सुलतान तीर्थोद्धारक-गच्छाधिपति</div>
+      <div class="guru-name-main">प.पू.आ.वि. श्री राजशेखर सूरीश्वरजी महाराजा</div>
+    </div>
+    
   </div>
-  
+</div>
   <!-- TAPASVI -->
   <div class="card blush reveal">
     <div class="co tl"></div><div class="co tr"></div>
