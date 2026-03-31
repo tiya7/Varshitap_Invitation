@@ -312,25 +312,38 @@
     line-height: 1.8;
     white-space: nowrap;
   }
-  @media(max-width:400px) { .venue-address { white-space:normal; } }
-  .map-btn {
-    display: inline-flex;
-    align-items: center;
-    gap: 7px;
-    margin-top: 14px;
-    padding: 10px 26px;
-    background: linear-gradient(135deg, #B8860B, #8B6500);
-    color: #FFF8E8;
-    text-decoration: none;
-    font-size: clamp(0.78rem, 2.1vw, 0.88rem);
-    border-radius: 3px;
-    letter-spacing: 0.05em;
-    font-family: 'Noto Serif Devanagari', serif;
-    box-shadow: 0 2px 10px rgba(184,134,11,0.3);
-    transition: box-shadow 0.2s;
-  }
-  .map-btn:hover { box-shadow:0 4px 18px rgba(225, 11, 143, 0.5); }
-  .map-btn .map-icon { font-size: 1.15rem; }
+ @media(max-width:400px) { 
+  .venue-address { white-space:normal; } 
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 14px;
+  padding: 10px 26px;
+  /* Changed background to light green */
+  background: #90EE90; 
+  /* Changed text color to black */
+  color: #000000; 
+  text-decoration: none;
+  font-size: clamp(0.78rem, 2.1vw, 0.88rem);
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+  font-family: 'Noto Serif Devanagari', serif;
+  /* Adjusted shadow to be subtler for light background */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1); 
+  transition: all 0.2s;
+}
+
+.map-btn:hover { 
+  background: #7CCD7C; /* Slightly darker green on hover */
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2); 
+}
+
+.map-btn .map-icon { 
+  font-size: 1.15rem; 
+}
 
   /* FOOTER */
   .invite-msg {
@@ -501,7 +514,7 @@
       <a class="map-btn"
          href="https://maps.google.com/?q=Vardhaman+Sanskrutik+Kendra+Kondhwa+Road+Pune"
          target="_blank">
-        <span class="map-icon">🗺️☝️</span> Address
+        <span class="map-icon">👉</span> Click Here For Address
       </a>
     </div>
   </div>
